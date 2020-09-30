@@ -1,0 +1,55 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Tugas Calculator Javascript</title>
+</head>
+
+
+</head>
+
+<body>
+    Nilai 1 <input type="number" id="angka1" />
+    <br>
+    <br>
+    Nilai 2 <input type="number" id="angka2" />
+    <br>
+    <br>
+    Jumlah <input type="text" id="tot" />
+    <br>
+    <br>
+    <button type="button"
+        onclick='Add("tot", document.getElementById("angka1").value , document.getElementById("angka2").value)'
+        style="height:50px;width:50px">+</button>
+    <button type="button"
+        onclick='Sub("tot", document.getElementById("angka1").value , document.getElementById("angka2").value)'
+        style="height:50px;width:50px">-</button>
+    <button type="button"
+        onclick='Mul("tot", document.getElementById("angka1").value , document.getElementById("angka2").value)'
+        style="height:50px;width:50px">X</button>
+    <button type="button"
+        onclick='Div("tot", document.getElementById("angka1").value , document.getElementById("angka2").value)'
+        style="height:50px;width:50px">/</button>
+
+    <script>
+        function Add(no, ak1, ak2) {
+            document.getElementById(no).value = Number(ak1) + Number(ak2);
+        }
+
+        function Sub(no, ak1, ak2) {
+            document.getElementById(no).value = Number(ak1) - Number(ak2);
+        }
+
+        function Div(no, ak1, ak2) {
+            document.getElementById(no).value = Number(ak1) / Number(ak2);
+        }
+
+        function Mul(no, ak1, ak2) {
+            document.getElementById(no).value = Number(ak1) * Number(ak2);
+        }
+    </script>
+</body>
+
+</html>
